@@ -47,7 +47,7 @@ body {
 
 .profile-info h2 {
     font-size: 1.4rem;
-    margin-top: -10px;  /* Reduce el margen superior para acercar el h2 al avatar */
+    margin-top: -20px;  /* Reduce el margen superior para acercar el h2 al avatar */
     margin-bottom: 8px;  /* Ajusta el espacio entre el h2 y el siguiente elemento */
 }
 
