@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2000; /* Aseguramos que quede encima del resto */
+}
+
+/* Navbar links and layout */
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribuir los elementos equitativamente */
+    align-items: center; /* Alinear los elementos verticalmente */
+    list-style: none;
+    padding: 0 20px; /* Espaciado lateral */
+    margin: 0;
+}
+
+/* Estilo de cada elemento en el navbar */
+nav ul li {
+    display: flex;
+    align-items: center; /* Alinea el contenido verticalmente */
+}
+
+/* Logo de KFC */
+nav ul li .logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Estilo de los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px; /* Separación entre los enlaces */
+}
+
+nav ul li a:hover {
+    color: #f26c4f; /* Color al pasar el mouse */
+}
+
+/* Estilo para el input de búsqueda */
+input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Botones con imágenes */
+.btn-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #fff;
+    color: #f26c4f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #f26c4f;
+    transition: all 0.3s ease;
+}
+
+.btn-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-img:hover {
+    background-color: #f26c4f;
+    color: #fff;
+}
+
+.btn-img:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* Botón de Ingresar */
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #f26c4f;
+}
+
+/* Carrito de compras */
+nav ul li img.cart-icon {
+    width: 25px;
+    height: auto;
+}
+
+/* Responsividad: hacer que el navbar se ajuste en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear los elementos hacia la izquierda */
+        padding: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Añadir espacio entre los elementos */
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .btn-img, .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
