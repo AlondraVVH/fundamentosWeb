@@ -1,47 +1,136 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KFC - Delivery a Mil</title>
+    <title>KFC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Contenedor superior negro -->
-    <div class="location-container">
-        <span>INGRESA TU UBICACIÓN</span>
+    <!-- Encabezado principal -->
+    <div class="header">
+        <div class="logo">
+            <img alt="KFC Logo" src="img/kfc logo.png" width="100" height="100">
+        </div>
+        <div class="nav">
+            <a href="#">Pedir</a>
+            <a href="#">Contactos</a>
+            <a href="#">Restaurantes</a>
+            <a href="#">Nosotros</a>
+            <!-- Barra de búsqueda colocada después de "Nosotros" -->
+            <form class="search-form">
+                <div class="search-container">
+                    <button type="submit" class="search-button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.71799 11.2498C3.75654 12.2898 5.13956 12.9142 6.60651 13.0052C8.07346 13.0963 9.52307 12.6477 10.6822 11.7441L14.6707 15.7326C14.8122 15.8692 15.0016 15.9448 15.1983 15.9431C15.3949 15.9414 15.583 15.8625 15.7221 15.7234C15.8612 15.5844 15.94 15.3963 15.9417 15.1996C15.9435 15.003 15.8679 14.8135 15.7312 14.6721L11.7427 10.6836C12.6865 9.47245 13.1326 7.94694 12.9903 6.41816C12.8479 4.88937 12.1277 3.47247 10.9766 2.45643C9.82547 1.44038 8.33011 0.901713 6.79549 0.950287C5.26086 0.998861 3.80255 1.63102 2.71799 2.71783C2.15759 3.27795 1.71304 3.94299 1.40973 4.67496C1.10643 5.40694 0.950317 6.1915 0.950317 6.98383C0.950317 7.77615 1.10643 8.56072 1.40973 9.29269C1.71304 10.0247 2.15759 10.6897 2.71799 11.2498ZM3.77849 3.77983C4.51992 3.03841 5.49548 2.57701 6.53896 2.47423C7.58244 2.37144 8.62927 2.63364 9.50111 3.21615C10.3729 3.79865 11.0158 4.66543 11.3203 5.66879C11.6247 6.67215 11.5718 7.75003 11.1706 8.71877C10.7694 9.68752 10.0448 10.4872 9.12008 10.9815C8.19541 11.4759 7.12793 11.6344 6.09953 11.4299C5.07113 11.2255 4.14542 10.6708 3.48014 9.86033C2.81485 9.0499 2.45115 8.03386 2.45099 6.98533C2.44893 6.38951 2.56522 5.79921 2.7931 5.24869C3.02098 4.69817 3.35592 4.19838 3.77849 3.77833V3.77983Z"
+                                fill="#262329"></path>
+                        </svg>
+                    </button>
+                    <input type="text" placeholder="Buscar..." class="search-input" value="">
+                </div>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="#">
+                <img alt="Cupones Icon" src="img/cupon.kfc.PNG" width="35" height="35">
+                <span>Cupones</span>
+            </a>
+            <a href="#">
+                <img alt="Perfil Icon" src="img/perfil.kfc.PNG" width="35" height="35">
+                <span>Perfil</span>
+            </a>
+            <a class="ingresar" href="#">Ingresar</a>
+            <a href="#">
+                <img alt="Carrito Icon" src="img/icon.kfc.PNG">
+            </a>
+        </div>
     </div>
 
-    <header>
-        <nav>
-            <ul>
-                <!-- Logo de KFC -->
-                <li><a href="#"><img src="img/kfc logo.png" alt="Logo KFC" class="logo"></a></li>
+    <!-- Sub-encabezado -->
+    <div class="sub-header">
+        INGRESA TU UBICACIÓN
+    </div>
 
-                <!-- Enlaces de navegación -->
-                <li><a href="#">Pedir</a></li>
-                <li><a href="#">Contactos</a></li>
-                <li><a href="#">Restaurantes</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><input type="text" placeholder="Buscar"></li>
-
-                <!-- Botones con imágenes -->
-                <li><a href="#" class="btn-img"><img src="img/cupon.kfc.PNG" alt="Cupones"> Cupones</a></li>
-                <li><a href="#" class="btn-img"><img src="img/perfil.kfc.PNG" alt="Perfil"> Perfil</a></li>
-
-                <!-- Botón Ingresar -->
-                <li><a href="#" class="btn">Ingresar</a></li>
-
-                <li><a href="#"><img src="img/icon.kfc.PNG" alt="Carrito de compras" class="cart-icon"></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section con solo la imagen del balde de pollo -->
-    <section class="hero">
-        <img src="img/bacgrongkfc.png" alt="Balde de pollo" class="hero-image">
-    </section>
-
-    <script src="script.js"></script>
+    <!-- Sección principal -->
+    <div class="main">
+        <img class="background" src="img/bacgrongkfc.png" alt="Background">
+        <div class="carousel">
+            <div class="dot "></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+   <!-- Contenedor del botón separado, usando flex y centrado -->
+   <div class="flex justify-center py-7">
+    <a href="/menu">
+     <button class="flex items-center justify-center px-4 py-2 rounded-full focus:outline-none w-fit bg-primary text-white px-7">
+     </button>
+   </div>
+   <div class="menu-header">
+    <h1>MENÚ</h1>
+   </div>
+        <div class="menu-grid">
+            <!-- Fila 1: 6 elementos -->
+            <div class="menu-item">
+                <img src="img/img1.jpg" alt="Martes Locos" height="200" width="200"/>
+                <p>MARTES LOCOS</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img2.jpg" alt="Nuggets" height="200" width="200"/>
+                <p>NUGGETS</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img3.jpg" alt="Imperdibles" height="200" width="200"/>
+                <p>IMPERDIBLES</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img4.jpg" alt="Combos" height="200" width="200"/>
+                <p>COMBOS</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img5.jpg" alt="Postres" height="200" width="200"/>
+                <p>POSTRES</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img6.jpg" alt="Sandwich" height="200" width="200"/>
+                <p>SANDWICH</p>
+            </div>
+        
+            <!-- Fila 2: 6 elementos -->
+            <div class="menu-item">
+                <img src="img/img7.jpg" alt="Para compartir 2 o más personas" height="200" width="200"/>
+                <p>PARA COMPARTIR (2 O MÁS PERSONAS)</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img8.jpg" alt="Boxes" height="200" width="200"/>
+                <p>BOXES</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img9.jpg" alt="Buckets 3 o más pers" height="200" width="200"/>
+                <p>BUCKETS (3 O MÁS PERS)</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img10.jpg" alt="Postres" height="200" width="200"/>
+                <p>POSTRES</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img11.jpg" alt="Twister" height="200" width="200"/>
+                <p>TWISTER</p>
+            </div>
+            <div class="menu-item">
+                <img src="img/img12.jpg" alt="Acompañantes y extras" height="200" width="200"/>
+                <p>ACOMPAÑANTES Y EXTRAS</p>
+            </div>
+        </div>
+        
+        </div>
+    </div>
 </body>
+
 </html>
