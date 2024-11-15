@@ -658,56 +658,43 @@ body {
         margin-left: 20dvh;
         /* Coloca la búsqueda al final */
     }
-
-    .search-form {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-left: 20px;
-        /* Espaciado entre el último enlace y la búsqueda */
-    }
-
-    /* Estilos de la búsqueda */
     .search-container {
-        display: flex;
-        align-items: center;
+        display: flex; /* Hace que los hijos se dispongan en una fila */
+        align-items: center; /* Alinea verticalmente los elementos */
+        border: 1px solid #ddd; /* Opcional: da un borde al conjunto */
+        border-radius: 9999px; /* Aplica un borde redondeado uniforme */
+        overflow: hidden; /* Asegura que no sobresalgan elementos */
+        background-color: #f5f5f5; /* Fondo común */
     }
-
+    
     .search-button {
         padding: 8px 15px;
         border: none;
-        background-color: #f5f5f5;
-        border-top-left-radius: 9999px;
-        border-bottom-left-radius: 9999px;
+        background-color: transparent; /* Fondo transparente para unificar con el contenedor */
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer; /* Muestra el puntero de clic */
     }
-
+    
     .search-button svg {
         fill: #262329;
     }
-
+    
     .search-input {
-        flex: 1;
-        padding: 8px 15px;
         border: none;
-        border-left: none;
-        border-top-right-radius: 9999px;
-        border-bottom-right-radius: 9999px;
-        font-size: 14px;
-        background-color: #f5f5f5;
+        flex: 1; /* Ocupa todo el espacio restante */
+        padding: 8px 15px;
+        font-size: 14px; /* Fondo transparente para unificar con el contenedor */
     }
-
-    /* Quitar el borde negro al hacer clic en el campo de búsqueda */
+    
+    /* Quitar el borde al enfocar */
     .search-input:focus,
     .search-button:focus {
         outline: none;
-        /* Elimina el borde por defecto al enfocar */
         border: none;
-        /* Asegurarse de que no haya borde */
     }
-
+    
     .header .nav a {
         text-decoration: none;
         color: #333;
@@ -910,13 +897,11 @@ body {
 
 
     .footer {
-        background-color: #fff;
+        background-color: #F8F7F5;
         padding: 20px 40px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        border-top: 1px solid #eaeaea;
-
     }
     
     .footer .column {
@@ -968,15 +953,16 @@ body {
     }
 
     .footer .social-icons {
-        margin-top: 20px;
+        display: flex;
+        gap: 10px; /* Espacio entre los íconos */
     }
-
-    .footer .social-icons a {
-        margin-right: 10px;
-        color: #000;
-        font-size: 20px;
-        text-decoration: none;
+    
+    .social-icon {
+        width: 24px;  /* Ajusta el tamaño según lo que desees */
+        height: 24px; /* Debe ser consistente con el ancho */
+        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
     }
+    
 
     .footer .social-icons a:last-child {
         margin-right: 0;
