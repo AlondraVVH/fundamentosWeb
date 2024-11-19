@@ -1,6 +1,10 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
 
     /* Encabezado principal */
     .header {
@@ -127,7 +131,6 @@ body {
         font-size: 15px;
         text-align: center;
         margin-top: 5px;
-
     }
 
     .header .icons a.ingresar {
@@ -198,24 +201,13 @@ body {
         opacity: 2;
     }
 
-    /* Ajustes adicionales */
-    .header .nav a:hover,
-    .header .icons a.ingresar:hover {
-        color: #000;
-    }
+
 
     .header .icons span img,
     .header .logo img {
         max-height: 50px;
     }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        color: #000;
-        margin: 0;
-        padding: 0;
-    }
 
     .container {
         width: 90%;
@@ -295,32 +287,6 @@ body {
         margin: 10px 0 0;
         font-size: 14px;
         font-weight: bold;
-    }
-
-    /* Ajuste para pantallas pequeñas */
-    @media (max-width: 768px) {
-        .menu-grid {
-            grid-template-columns: repeat(3, 1fr);
-            /* 3 elementos por fila en pantallas pequeñas */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .menu-grid {
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 elementos por fila en pantallas muy pequeñas */
-        }
-    }
-
-
-    /* Encabezado principal */
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 30px;
-        background-color: #fff;
-        border-bottom: 2px solid #ddd;
     }
 
     /* Logo KFC */
@@ -402,6 +368,7 @@ body {
         color: #333;
         font-size: 16px;
         font-weight: bold;
+        transition: 0.5s;
     }
 
     .header .search {
@@ -448,6 +415,7 @@ body {
         border-radius: 20px;
         font-weight: bold;
         text-decoration: none;
+        transition: 0.5s;
     }
 
     /* Ajuste de íconos */
@@ -508,25 +476,12 @@ body {
     .carousel .dot.active {
         opacity: 2;
     }
-
-    /* Ajustes adicionales */
-    .header .nav a:hover,
-    .header .icons a.ingresar:hover {
-        color: #000;
-    }
-
     .header .icons span img,
     .header .logo img {
         max-height: 50px;
     }
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        color: #000;
-        margin: 0;
-        padding: 0;
-    }
+
 
     .container {
         width: 90%;
@@ -608,20 +563,6 @@ body {
         font-weight: bold;
     }
 
-    /* Ajuste para pantallas pequeñas */
-    @media (max-width: 768px) {
-        .menu-grid {
-            grid-template-columns: repeat(3, 1fr);
-            /* 3 elementos por fila en pantallas pequeñas */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .menu-grid {
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 elementos por fila en pantallas muy pequeñas */
-        }
-    }
 
 
     /* Encabezado principal */
@@ -658,43 +599,54 @@ body {
         margin-left: 20dvh;
         /* Coloca la búsqueda al final */
     }
+
     .search-container {
-        display: flex; /* Hace que los hijos se dispongan en una fila */
-        align-items: center; /* Alinea verticalmente los elementos */
-        border: 1px solid #ddd; /* Opcional: da un borde al conjunto */
-        border-radius: 9999px; /* Aplica un borde redondeado uniforme */
-        overflow: hidden; /* Asegura que no sobresalgan elementos */
-        background-color: #f5f5f5; /* Fondo común */
+        display: flex;
+        /* Hace que los hijos se dispongan en una fila */
+        align-items: center;
+        /* Alinea verticalmente los elementos */
+        border: 1px solid #ddd;
+        /* Opcional: da un borde al conjunto */
+        border-radius: 9999px;
+        /* Aplica un borde redondeado uniforme */
+        overflow: hidden;
+        /* Asegura que no sobresalgan elementos */
+        background-color: #f5f5f5;
+        /* Fondo común */
     }
-    
+
     .search-button {
         padding: 8px 15px;
         border: none;
-        background-color: transparent; /* Fondo transparente para unificar con el contenedor */
+        background-color: transparent;
+        /* Fondo transparente para unificar con el contenedor */
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer; /* Muestra el puntero de clic */
+        cursor: pointer;
+        /* Muestra el puntero de clic */
     }
-    
+
     .search-button svg {
         fill: #262329;
     }
-    
+
     .search-input {
         border: none;
-        flex: 1; /* Ocupa todo el espacio restante */
+        flex: 1;
+        /* Ocupa todo el espacio restante */
         padding: 8px 15px;
-        font-size: 14px; /* Fondo transparente para unificar con el contenedor */
+        font-size: 14px;
+        /* Fondo transparente para unificar con el contenedor */
     }
-    
+
     /* Quitar el borde al enfocar */
     .search-input:focus,
     .search-button:focus {
         outline: none;
         border: none;
     }
-    
+
     .header .nav a {
         text-decoration: none;
         color: #333;
@@ -808,9 +760,15 @@ body {
     }
 
     /* Ajustes adicionales */
-    .header .nav a:hover,
+    .header .nav a:hover{
+        color: #4b0000;
+        font-size: 2dvh;
+    }
     .header .icons a.ingresar:hover {
-        color: #000;
+        color: #000000;
+        background-color: #F3F3F3;
+        font-size: 2dvh;
+
     }
 
     .header .icons span img,
@@ -824,7 +782,7 @@ body {
         margin-bottom: 4dvh;
     }
 
-    .boton-menu button {
+    .boton-menu button{
         background-color: #e4002b;
         color: #fff;
         border: none;
@@ -833,7 +791,13 @@ body {
         font-size: 16px;
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 1s ease;
+        transition: 1s;
+    }
+
+    .boton-menu button:hover{
+        font-size: 2dvh;
+        color: #e70000;
+        background-color: #F3F3F3;
     }
 
     /* Contenedor del menú */
@@ -903,66 +867,73 @@ body {
         justify-content: space-between;
         align-items: flex-start;
     }
-    
+
     .footer .column {
-        flex: 1; /* Esto hace que todas las columnas tengan el mismo tamaño */
+        flex: 1;
+        /* Esto hace que todas las columnas tengan el mismo tamaño */
         margin-right: 40px;
-        min-width: 200px; /* Establece un tamaño mínimo para las columnas */
-        flex-wrap: wrap; /* Permite que las columnas se acomoden en varias filas si es necesario */
+        min-width: 200px;
+        /* Establece un tamaño mínimo para las columnas */
+        flex-wrap: wrap;
+        /* Permite que las columnas se acomoden en varias filas si es necesario */
     }
-    
+
     .footer .column:last-child {
         margin-right: 0;
     }
-    
+
     .footer .column h3 {
         font-size: 16px;
         margin-bottom: 10px;
     }
-    
+
     .footer .column p {
         font-size: 14px;
         line-height: 1.6;
         margin: 0;
     }
-    
+
     .footer .social-icons {
         margin-top: 20px;
     }
-    
+
     .footer .social-icons a {
         margin-right: 10px;
         color: #000;
         font-size: 20px;
         text-decoration: none;
     }
-    
+
     .footer .social-icons a:last-child {
         margin-right: 0;
     }
-    
+
     .footer .bottom-text {
         font-size: 12px;
         color: #666;
         margin-top: 20px;
         text-align: center;
     }
-    
+
     .footer .bottom-text span {
         display: block;
     }
 
     .footer .social-icons {
         display: flex;
-        gap: 10px; /* Espacio entre los íconos */
+        gap: 10px;
+        /* Espacio entre los íconos */
     }
-    
+
     .social-icon {
-        width: 24px;  /* Ajusta el tamaño según lo que desees */
-        height: 24px; /* Debe ser consistente con el ancho */
-        object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+        width: 24px;
+        /* Ajusta el tamaño según lo que desees */
+        height: 24px;
+        /* Debe ser consistente con el ancho */
+        object-fit: contain;
+        /* Asegura que la imagen se ajuste sin distorsión */
     }
-    
+
 
     .footer .social-icons a:last-child {
         margin-right: 0;
