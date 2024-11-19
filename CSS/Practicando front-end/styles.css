@@ -761,7 +761,7 @@ body {
 
     /* Ajustes adicionales */
     .header .nav a:hover{
-        color: #4b0000;
+        color: #ff0707;
         font-size: 2dvh;
     }
     .header .icons a.ingresar:hover {
